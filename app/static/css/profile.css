@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Chivo|Merienda+One&display=swap');
+*{
+    background-color: #D7D6E6;
+}
 .card-img-top {
 
     width: 100%;
@@ -9,12 +12,34 @@
     border: none;
 }
 
-.underline{
-    width: 200px;
-    height: 10px;
-    background-color: blue;
-    margin: 0 auto;
-}
+
 h1{
     font-family: 'Alfa Slab One', cursive;
+}
+
+.text-light{
+    padding:15px;
+    font-size: 20px;
+
+}
+
+.sub{
+    margin-bottom:20px;
+    text-align: center;
+    margin-right:80px;
+}
+
+
+p{
+    font-size:20px;
+    text-align:center;
+}
+
+.container{
+    background-color:#80A1D4;
+    min-height:80vh;
+}
+
+button{
+    left:500px;
 }
