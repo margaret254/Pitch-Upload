@@ -49,10 +49,11 @@ As a user I would like to:
         $ chmod a+x start.sh
         ./start.sh
 
+
 ## Technologies Used
 * Python3.6
 * Flask
-* Databases
+* Database
 
 ## License
-MIT &copy;2019 [Margaret254](https://github.com/margaret254/)
+MIT &copy;2019 [Margaret Mwangi](https://github.com/margaret254/)
