@@ -52,6 +52,7 @@ As a user I would like to:
 ## Technologies Used
 * Python3.6
 * Flask
+* Databases
 
 ## License
 MIT &copy;2019 [Margaret254](https://github.com/margaret254/)
