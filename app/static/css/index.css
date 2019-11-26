@@ -92,3 +92,10 @@
     font-family: 'Courgette', cursive;
     font-size:20px;
  }
+
+ .new-pitch{
+    min-height: 100vh;
+    background-color:#5D737E;
+    font-family: 'Courgette', cursive;
+    font-size:20px;
+ }
