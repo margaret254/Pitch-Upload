@@ -6,21 +6,21 @@
 {% endblock %}
  
 {% block content %}
-<section class="bg-secondary">
-        <div class="container">
+
+        <div class="container prod">
                 <h3 class="text-center text-light">Product Pitches</h3>
-                <a class="btn-primary" href="{{url_for('main.new_pitch')}}">
+                <a class="new" href="{{url_for('main.new_pitch')}}">
                     <br>
                     Add a new Pitch
                 </a>
         
-                <hr>
+                
                 
                     {{macro.displayPitchesInCategories(pitches,4)}}
-                <hr>
+                
             
             </div>
-</section>
+
     
 
 {% endblock %}

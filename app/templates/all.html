@@ -17,9 +17,10 @@
         <a href="{{url_for('main.new_pitch')}}"><br>
             <span class="new">Add a new Pitch</span></a>
         </div>
-        <hr>
-    <div class="row ">
-            <div class=" col-md-8 mx-auto bg-light all-pitches">
+        
+    <div class="row">
+            <div class=" col-md-12 mx-auto bg-light all-pitches">
+                    <h3> Pitches </h3>
                     {{macro.displayPitches(pitches)}}
                  </div>
     </div> 
