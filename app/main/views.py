@@ -15,7 +15,7 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    title = 'Home - qWelcome this is where you belong'
+    title = 'Home - Welcome this is where you belong'
 
     
     pitches= Pitch.get_all_pitches()  

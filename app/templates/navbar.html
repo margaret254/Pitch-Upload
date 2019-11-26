@@ -3,17 +3,14 @@
       
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link mr-5 text-light" href="/"><i class="fa fa-home mr-2"></i><strong>HOME</strong> <span class="sr-only">(current)</span></a>
+        <li>
+          <a class="text-light" href="/"><i class="fa fa-home "></i><strong>HOME</strong> </a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link mr-5 text-light" href="{{url_for('main.all')}}"><strong>All pitches</strong> <span class="sr-only">(current)</span></a>
+        <li>
+          <a class="text-light" href="{{url_for('main.all')}}"><strong>All pitches</strong></a>
         </li>
        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <strong>Select Category</strong>
-          </a>
+          <li class="dropdown"><a href="#" class="dropdown-toggle text-light" data-toggle="dropdown"><strong class="ml-2">Select Category</strong> <b class="caret"></b></a>
           <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{url_for('main.interview')}}"><strong>Interview Pitches</strong></a>
             <a class="dropdown-item" href="{{url_for('main.pick_up_line')}}"><strong> pick Up Lines</strong> </a>
@@ -26,7 +23,6 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {% if current_user.is_authenticated %}
-        <!-- <li style="color:white;padding:15px;">{{current_user.username}}</li> -->
         
         <li class="dropdown"><a href="#" class="dropdown-toggle text-light" data-toggle="dropdown"><i class="fa fa-user"></i><strong class="ml-2">Welcome, {{current_user.username}}</strong> <b class="caret"></b></a>
           <ul class="dropdown-menu bg-dark text-center">

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 
 
  h3{
@@ -10,19 +11,36 @@
 
  #index{
     background-color:#5D737E;
-    min-height: 100vh;
+    min-height: 80vh;
+    margin:80px;
  }
 
- div .head{
-     
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 100px;
-  border-radius: 3px;
-  font-family: 'Carter One', cursive;
+ .all{
+    background-color:#5D737E;
+    height:95vh;;
+    margin-bottom: 60px;
+    font-family: 'Courgette', cursive;
+ }
+
+ .navbar-brand{
+     text-align: center;
+ }
+
+ .navbar{
+     background-color: black;
+     padding:20px;
+     margin-top:5px;
+ }
+
+ h2{
+     text-align: center;
+     margin-bottom:40px;
+     margin-top:150px;
+     font-family: 'Carter One', cursive;
+     font-size:30px;
+     color:black
+ }
+ .text-light{
+     padding:20px;
+     font-size: 20px;
  }

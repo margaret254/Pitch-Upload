@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Chivo|Merienda+One&display=swap');
 *{
     font-family: 'Chivo', sans-serif;
+    background-color: #D7D6E6;
 }
+
 .pick{
     min-height: 100vh;
+}
+
+.text-light{
+    padding:15px;
+    font-size: 20px;
+
 }
