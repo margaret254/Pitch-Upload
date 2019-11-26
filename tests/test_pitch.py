@@ -7,8 +7,8 @@ class TestReview(unittest.TestCase):
     Test Class to test the behaviour of the Review class
     '''
     def setUp(self):
-        self.user_James = User(username = 'James',password = 'potato', email = 'james@ms.com')
-        self.new_pitch = Pitch(pitch='An openning forum for youths',user = self.user_James )
+        self.user_Moringa = User(username = 'Moringa',password = 'password', email = 'moringagmail@.com')
+        self.new_pitch = Pitch(pitch='An openning forum for youths',user = self.user_Moringa )
 
     def tearDown(self):
         Pitch.query.delete()
@@ -16,7 +16,7 @@ class TestReview(unittest.TestCase):
 
     def test_check_instance_variables(self):
         self.assertEquals(self.new_pitch.pitch,'An opening forum for youths')
-        self.assertEquals(self.new_pitch.user,self.user_James)
+        self.assertEquals(self.new_pitch.user,self.user_Moringa)
 
     def test_save_review(self):
         self.new_pitch.save_pitch()

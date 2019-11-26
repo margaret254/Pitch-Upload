@@ -4,7 +4,6 @@ from wtforms.validators import Required
 
 class CommentsForm(FlaskForm):
     comment = TextAreaField('Comment', validators=[Required()])
-    # vote=RadioField('default field arguments', choices=[('1', 'UpVote'), ('1', 'DownVote')])
     submit = SubmitField('SUBMIT')
 
 class PitchForm(FlaskForm):

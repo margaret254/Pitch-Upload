@@ -7,8 +7,8 @@ class CommentTest(unittest.TestCase):
     Test Class to test the behaviour of the Pitch class
     '''
     def setUp(self):
-        self.user_James = User(username = 'James',password = 'potato', email = 'james@ms.com')
-        self.new_comment = Comment(pitch_id=12345,pitch_title='Review for movies',image_path="https://image.tmdb.org/t/p/w500/jdjdjdjn",movie_review='This movie is the best thing since sliced bread',user = self.user_James ) 
+        self.user_Moringa = User(username = 'Moringa',password = 'password', email = 'moringa@gmail.com')
+        self.new_comment = Comment(pitch_id=12345,pitch_title='Review for movies',image_path="https://image.tmdb.org/t/p/w500/jdjdjdjn",movie_review='This movie is the best thing since sliced bread',user = self.user_Moringa) 
 
     def tearDown(self):
         Comment.query.delete()
@@ -19,7 +19,7 @@ class CommentTest(unittest.TestCase):
         self.assertEquals(self.new_comment.pitch_title,'Review for movies')
         self.assertEquals(self.new_comment.image_path,"https://image.tmdb.org/t/p/w500/jdjdjdjn")
         self.assertEquals(self.new_comment.pitch_comment,'This movie is the best thing since sliced bread')
-        self.assertEquals(self.new_comment.user,self.user_James) 
+        self.assertEquals(self.new_comment.user,self.user_Moringa) 
 
     def test_save_comment(self): 
         self.new_comment.save_comment()
