@@ -4,9 +4,9 @@ class Config:
     '''
     General configuration parent class
     '''
-    SECRET_KEY = os.environ.get('pitch')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:maggie@localhost/pitchupload'
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
 
     #simple mde configurations
@@ -21,6 +21,7 @@ class Config:
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
     SUBJECT_PREFIX = 'Pitch'
     SENDER_EMAIL = 'maggiemwas91@gmail.com'
+    
 
     @staticmethod
     def init_app(app):

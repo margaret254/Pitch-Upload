@@ -1,4 +1,4 @@
-export SECRET_KEY='FlaskSecret'
+export SECRET_KEY='pitch'
 export MAIL_USERNAME='maggiemwas91@gmail.com'
 export MAIL_PASSWORD='maggie'
 
