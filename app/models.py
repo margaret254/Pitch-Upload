@@ -69,7 +69,7 @@ class Pitch(db.Model):
     @classmethod
     def get_pitches_by_category(cls,category_id):
         '''
-        Function that queries the databse and returns pitches based on the
+        Function that queries the database and returns pitches based on the
         category passed to it
         '''
         return Pitch.query.filter_by(category_id= category_id)

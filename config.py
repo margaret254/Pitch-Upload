@@ -5,7 +5,7 @@ class Config:
     General configuration parent class
     '''
     SECRET_KEY = os.environ.get('pitch')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:maggie@localhost/pitch-upload'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:maggie@localhost/pitchupload'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
 
@@ -19,8 +19,8 @@ class Config:
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
-    SUBJECT_PREFIX = 'Watchlist'
-    SENDER_EMAIL = 'titusouko@gmail.com'
+    SUBJECT_PREFIX = 'Pitch'
+    SENDER_EMAIL = 'maggiemwas91@gmail.com'
 
     @staticmethod
     def init_app(app):
@@ -36,7 +36,7 @@ class ProdConfig(Config):
     
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:@Sopiti1221@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:maggie@localhost/pitchupload'
 
 class DevConfig(Config):
     '''
@@ -44,7 +44,7 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with general configuration settings
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:@Sopiti1221@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:maggie@localhost/pitchupload'
     DEBUG = True
 
 config_options = {
