@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Chivo|Merienda+One&display=swap');
-*{
-    background-color: #D7D6E6;
+
+.prof{
+        min-height: 100vh;
+        background-color:#5D737E;
+        font-family: 'Courgette', cursive;
+        font-size:20px;
+        border-radius: 30px;
+}
+
+.navbar{
+    background-color: black;
+    padding:20px;
+    margin-top:5px;
 }
 .card-img-top {
 
@@ -35,10 +46,6 @@ p{
     text-align:center;
 }
 
-.container{
-    background-color:#80A1D4;
-    min-height:80vh;
-}
 
 button{
     left:500px;
